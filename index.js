@@ -5,19 +5,19 @@ const edUrl = "https://cdn.freecodecamp.org/testable-projects-fcc/data/choroplet
 // colors used for county fills
 const colors = [
     {
-        color: "#ffbaba"
-    },
-    {
-        color: "#ff7b7b"
-    },
-    {
-        color: "#ff5252"
+        color: "#a70000"
     },
     {
         color: "#ff0000"
     },
     {
-        color: "#a70000"
+        color: "#ff5252"
+    },
+    {
+        color: "#ff7b7b"
+    },
+    {
+        color: "#ffbaba"
     }
 ];
 
