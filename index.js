@@ -115,12 +115,15 @@ const drawMap = () => {
     const stepValues = colors.map(color => color.stepValue)
 
     // create legend axis using scale
-    // using step values + maxtemp for tick values
+    // using step values or tick values
     const legendAxis = d3.axisBottom()
     .scale(legendScale)
     .tickSize(10,0)
     .tickValues([...stepValues])
-    .tickFormat(d3.format(".2f"));
+    .tickFormat(d => {
+        const format = d3.format(".2f");
+        return `${format(d)}%`
+    });
 
     // add legend to svg
     const legend = svg.append("g")
